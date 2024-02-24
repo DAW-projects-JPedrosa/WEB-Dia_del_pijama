@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Jesús Pedrosa Soler">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Día del pijama - Apúntate</title>
+        <link rel="shortcut icon" href="./img/logo-sup.png" />
+        <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="./css/styles.css" rel="stylesheet"/>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>   
+    </head>
+    <body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #a3c5dd;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.aseaf.org/">
+            <img src="./img/logo-sup.png" alt="aseaf.com" width="67.5" height="58">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="./index.html">Día del pijama</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="./aseaf.html">ASEAF</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="./acoge.html">Acoge</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5" href="./galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold fs-5" aria-current="page" href="./apuntate.html">Apúntate</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Texto inicial -->
+      <div class="container p-3">
+        <h1>Apunta a tu cole y únete al Día del Pijama</h1>
+        <p class="pt-3">Rellena el formulario para apuntar a tu colegio en el día del pijama.</p>
+        <p>Si tienes algún problema para inscribirte a través del formulario envíanos un correo electrónico a 
+          <strong>aseaf@aseaf.org</strong> incluyendo los datos correspondientes a cada campo del formulario. </p>
+          <p>Para recibir el <strong><u>material</u></strong> es necesario inscribirse previamente. Una vez realizada la inscripción 
+            recibirás un correo automático con el material para participar. <strong>No olvides revisar tu bandeja de Spam y, 
+            si no lo hubieras recibido, no dudes en ponerte en contacto con nosotros escribiendo a aseaf@aseaf.org</strong></p>
+      </div>
+      <!-- End Texto inicial -->
+
+      <!-- Form -->
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <form action="#" method="post" class="p-1">
+              
+              <div class="form-floating mb-3 col-12">
+                <input type="text" class="form-control" id="nombreColegio" placeholder="Nombre del colegio" required>
+                <label for="nombreColegio">Nombre del Colegio</label>
+              </div>
+
+              <div class="row">
+                <div class="form-floating mb-3 col-lg-5">
+                  <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                  <label class="ms-2" for="nombre">Nombre</label>
+                </div>
+                <div class="form-floating mb-3 col-lg-7">
+                  <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
+                  <label class="ms-2" for="apellidos">Apellidos</label>
+                </div>
+              </div>
+
+              <div class="form-floating mb-3 col-12">
+                <input type="text" class="form-control" id="cargo" placeholder="Cargo" required>
+                <label for="cargo">Cargo</label>
+              </div>
+
+              <div class="form-floating mb-3 col-12">
+                <input type="tel" class="form-control" id="tlf" placeholder="Teléfono" pattern="^(\+34|0034|34)?[6789]\d{8}$" required>
+                <label for="tlf">Teléfono</label>
+              </div>
+
+              <div class="form-floating mb-3 col-12">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <label for="email">Correo electrónico</label>
+              </div>
+
+              <div class="row">
+                <div class="mb-3 col-lg-6">
+                  <select class="form-select" aria-label="Default select example" required>
+                    <option value="" disabled selected>Comunidad autónoma</option>
+                    <option value="AND">Andalucía</option>
+                    <option value="ARG">Aragón</option>
+                    <option value="AST">Principado de Asturias</option>
+                    <option value="BAL">Islas Baleares</option>
+                    <option value="CAN">Canarias</option>
+                    <option value="CTB">Cantabria</option>
+                    <option value="MAN">Castilla-La Mancha</option>
+                    <option value="LEO">Castilla y León</option>
+                    <option value="CAT">Cataluña</option>
+                    <option value="VAL">Comunidad Valenciana</option>
+                    <option value="EXT">Extremadura</option>
+                    <option value="GAL">Galicia</option>
+                    <option value="RIO">La Rioja</option>
+                    <option value="MAD">Comunidad de Madrid</option>
+                    <option value="MUR">Región de Murcia</option>
+                    <option value="NAV">Comunidad Foral de Navarra</option>
+                    <option value="VAS">País Vasco</option>
+                  </select>
+                </div>
+
+                <div class="mb-3 col-lg-6">
+                  <select class="form-select" aria-label="Default select example" required>
+                    <option value="" disabled selected>Provincia</option>
+                    <option value="1">Ejemplo1</option>
+                    <option value="2">Ejemplo2</option>
+                    <option value="3">Ejemplo3</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-check form-switch col-12">
+                <input class="form-check-input" type="checkbox" role="switch" id="acepto" required>
+                <label class="form-check-label" for="acepto">He leído y aceptado la <a href="https://www.aseaf.org/politica-de-privacidad">Política 
+                  de privacidad</a> y conozco las <a href="https://www.aseaf.org/aviso-legal">condiciones legales</a> del sitio.</label>
+              </div>
+              
+              <div class="pt-2">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-4 align-self-center">
+            <img src="./img/pijama.jpg" class="img-fluid animaPijama">
+          </div>
+        </div>
+      </div>
+      <!-- End Form -->
+      
+    </body>
+</html>

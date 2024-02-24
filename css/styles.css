@@ -1,0 +1,112 @@
+h1, h2{
+    color: orange;
+    text-align: center;
+}
+
+h4{
+    color: yellowgreen;
+}
+
+li{
+    padding-bottom: 1em;
+}
+
+.nav-link:hover:not(.active){
+    opacity:0.5;
+}
+
+.img-index:hover{
+    opacity: 0.5;
+}
+
+.aseaf-info{
+    opacity: 0.75;
+}
+.aseaf-info:hover{
+    opacity: 1;
+    animation-name: animacionAseaf;
+    animation-duration: 0.5s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+
+.flecha{
+    animation-name: animacionAseaf;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.animaImg:hover{
+    animation-name: animacionImagen;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animacionImagen{
+    from{
+        transform: scale(1);
+    }
+
+    25%{
+        transform: scale(1.01);
+    }
+
+    50%{
+        transform: scale(1);
+    }
+
+    85%{
+        transform: scale(0.99);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+.animaPijama{
+    animation-name: animacionPijama;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animacionPijama{
+    from{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(5deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    85%{
+        transform: rotate(-5deg);
+    }
+
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes animacionAseaf{
+    from{
+        transform: scaleY(1);
+    }
+
+    50%{
+        transform: scaleY(1.1);
+    }
+
+    to{
+        transform: scaleY(1);
+    }
+}
